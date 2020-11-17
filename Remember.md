@@ -5,9 +5,10 @@
     import sys    
     sys.setrecursionlimit(2600)
 
-[1012](https://www.acmicpc.net/problem/1012)
+예시 : [1012](https://www.acmicpc.net/problem/1012)
 
 ### 2. 2차원 배열 초기화
   
     ground =  [[0]      * M for _ in range(N)]
 
+예시 : [1012](https://www.acmicpc.net/problem/1012)
