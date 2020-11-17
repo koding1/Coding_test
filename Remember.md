@@ -15,7 +15,7 @@
 
 ### 3. DFS
 예시 : [1012](https://www.acmicpc.net/problem/1012)
-예시 : [2667](https://www.acmicpc.net/problem/1012)
+[2667](https://www.acmicpc.net/problem/1012)
 
 ### 4. 공백없는 문자열 한글자씩 배열에 나누어 입력 받기
         my_list = [list(map(int, input()))]
