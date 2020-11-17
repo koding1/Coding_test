@@ -5,7 +5,7 @@
     import sys    
     sys.setrecursionlimit(2600)
 
-예시 : Link: [Google][googlelink]
+예시 : Link: [Google][googlelink]    
 [googlelink]: https://google.com "Go google"
 
 ### 2. 2차원 배열 초기화
