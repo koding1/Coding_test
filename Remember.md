@@ -9,7 +9,7 @@
 
 ### 2. 2차원 배열 초기화
   
-    ground =  [[0]      * M for _ in range(N)]
+    ground =  [[0] * M for _ in range(N)]
 
 예시 : [1012](https://www.acmicpc.net/problem/1012)
 
@@ -29,3 +29,9 @@
 설명 : 공백 문자를 기준으로 각각 M, N, K 변수에 대입     
 ( 3 8 92 식으로 입력된다고 가정하면 M == 3, N == 8, K == 92 가 된다. )    
 예시 : [1012](https://www.acmicpc.net/problem/1012)
+
+### 6. 큐 생성
+        from collections import deque
+        queue = deque()
+설명 : collections 라이브러리에 deque 함수를 사용한다.
+참조 : [블로그 1](https://ooeunz.tistory.com/31)
