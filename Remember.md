@@ -22,7 +22,9 @@
 예시 : [2667](https://www.acmicpc.net/problem/1012)
 
 ### 5. 한 줄에 여러 개의 변수 입력 받기
-        M, N, K = [int(x) for x in input().split(' ')]
+        1. M, N, K = [int(x) for x in input().split(' ')]
+        
+        2. M, N, K = map(int, input().split(' '))    
         
 설명 : 공백 문자를 기준으로 각각 M, N, K 변수에 대입     
 ( 3 8 92 식으로 입력된다고 가정하면 M == 3, N == 8, K == 92 가 된다. )    
