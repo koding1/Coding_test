@@ -1,1 +1,3 @@
-# BOJ
+# SEJONG UNIVERSITY
+# 백준 OJ 문제 풀이
+
