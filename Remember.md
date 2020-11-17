@@ -12,3 +12,6 @@
     ground =  [[0]      * M for _ in range(N)]
 
 예시 : [1012](https://www.acmicpc.net/problem/1012)
+
+### 3. DFS
+예시 : [1012](https://www.acmicpc.net/problem/1012)
