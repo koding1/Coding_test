@@ -33,5 +33,5 @@
 ### 6. 큐 생성
         from collections import deque
         queue = deque()
-설명 : collections 라이브러리에 deque 함수를 사용한다.
+설명 : collections 라이브러리에 deque 함수를 사용한다.    
 참조 : [블로그 1](https://ooeunz.tistory.com/31)
