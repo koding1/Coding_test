@@ -25,8 +25,8 @@
         
         2. maze = [list(map(int, input())) for _ in range(N)]
         
-예시 : [2667](https://www.acmicpc.net/problem/2667)    
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2178](https://www.acmicpc.net/problem/2178) 
+예시 : [2667](https://www.acmicpc.net/problem/2667)
+[2178](https://www.acmicpc.net/problem/2178) 
 
 ## 6. 한 줄에 여러 개의 변수 입력 받기
         1. M, N, K = [int(x) for x in input().split(' ')]
