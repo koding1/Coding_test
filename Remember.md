@@ -19,7 +19,7 @@
 
 ## 4. 공백없는 문자열 한글자씩 리스트에 나누어 입력 받기
         my_list = [list(map(int, input()))]
-예시 : [2667](https://www.acmicpc.net/problem/1012)
+예시 : [2667](https://www.acmicpc.net/problem/2667)
 
 ## 5. 한 줄에 여러 개의 변수 입력 받기
         1. M, N, K = [int(x) for x in input().split(' ')]
