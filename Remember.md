@@ -46,7 +46,7 @@
 
 
 </br></br></br>
-<span style="color:red"># 기억하고 싶은 문제<span>    
+# <span style="color:red">기억하고 싶은 문제<span>    
 </br>
 ## 1. 1697 메모이제이션 + BFS
 설명 : 해당 문제는 아이디어부터, 기초적인 메모이제이션 기법을 사용했기 때문에 차후 복습하고 싶다.    
