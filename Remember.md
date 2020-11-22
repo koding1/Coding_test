@@ -42,3 +42,7 @@
         queue = deque()
 설명 : collections 라이브러리에 deque 함수를 사용한다.    
 참조 : [블로그 1](https://ooeunz.tistory.com/31)
+
+## 8. 메모이제이션, BFS
+설명 : 해당 문제는 아이디어부터, 기초적인 메모이제이션 기법을 사용했기 때문에 차후 복습하고 싶다.
+예시 : [1697](https://github.com/koding1/BOJ/tree/main/1697-(BFS)%E2%98%85)
