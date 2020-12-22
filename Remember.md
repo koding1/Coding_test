@@ -44,7 +44,12 @@
 설명 : collections 라이브러리에 deque 함수를 사용한다.    
 참조 : [블로그 1](https://ooeunz.tistory.com/31)
 
-
+### 8. empty list check ( 빈 리스트 확인 )
+        if my_list:
+            print("해당 리스트는 비어있지 않습니다.")
+        else: # (if not my_list)
+            print("해당 리스트는 비어있습니다.")
+설명 : 빈 sequence(스트링이나 리스트, 튜플)는 false값을 가진다.    
 
 </br></br></br>
 ## 기억하고 싶은 문제  
