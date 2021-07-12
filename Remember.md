@@ -95,6 +95,12 @@
         
 예제 : https://programmers.co.kr/learn/courses/30/lessons/42576
 
+체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
+if i - 1 >= 0 and n[i - 1] == 2:
+->
+i - 1 >= 0 and n[i - 1] 처럼 인덱싱과 i-1 에 대한 체크를 한 줄에 해도 out of range 오류가 발생하지 않는건가요 ?
+
+
 </br></br></br>
 ## 기억하고 싶은 문제  
 ### 1. 1697 메모이제이션 + BFS
