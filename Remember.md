@@ -90,10 +90,11 @@
         
 설명 : https://programmers.co.kr/learn/courses/30/lessons/72410
 
-### 12. dictionary의 key, item을 list로 return
+### 13. dictionary의 key, item을 list로 return
     list(d.keys())[0]
         
 예제 : https://programmers.co.kr/learn/courses/30/lessons/42576
+
 </br></br></br>
 ## 기억하고 싶은 문제  
 ### 1. 1697 메모이제이션 + BFS
