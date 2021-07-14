@@ -1,3 +1,4 @@
+# Stack
 def solution(board, moves):
     answer = 0
 
