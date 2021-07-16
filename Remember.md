@@ -101,7 +101,20 @@
 설명 : [1845 문제](https://programmers.co.kr/learn/courses/30/lessons/1845?language=python3)
 [1845 코드](https://github.com/koding1/Coding_test/blob/main/programmers/1845(%ED%8F%B0%EC%BC%93%EB%AA%AC)-set/1845.py)
 
-
+### 15. set에서 remove와 discard의 차이
+1. 에러 발생
+    s = set([5, 6, 8])
+    s.remove(7)
+    
+2. 에러 발생하지 않음
+    s = set([5, 6, 8])
+    s.discard(7)
+    
+   
+           
+설명 : discard와 remove 모두 같은 기능을 하지만 discard() 는 지우려는 element가 없어도 정상적으로 진행한다.
+[77484 문제](https://programmers.co.kr/learn/courses/30/lessons/77484#fn1)
+[77484 코드](https://github.com/koding1/Coding_test/blob/main/programmers/77484(%EB%A1%9C%EB%98%90%20%EC%88%9C%EC%9C%84)-set%2Cdiscard/77484.pyy)
 
 미해결 :    
 체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
