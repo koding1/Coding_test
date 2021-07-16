@@ -95,6 +95,15 @@
         
 예제 : https://programmers.co.kr/learn/courses/30/lessons/42576
 
+### 14. set로 list의 중복값 모두 제거하기
+    return min(len(nums)//2, len(set(nums)))
+           
+설명 : [1845 문제](https://programmers.co.kr/learn/courses/30/lessons/1845?language=python3)
+[1845 코드](https://github.com/koding1/Coding_test/blob/main/programmers/1845(%ED%8F%B0%EC%BC%93%EB%AA%AC)-set/1845.py)
+
+
+
+미해결 :    
 체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
 if i - 1 >= 0 and n[i - 1] == 2:
 ->
