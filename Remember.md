@@ -116,7 +116,7 @@
 [77484 코드](https://github.com/koding1/Coding_test/blob/main/programmers/77484(%EB%A1%9C%EB%98%90%20%EC%88%9C%EC%9C%84)-set%2Cdiscard/77484.pyy)
 
 
-### 16. divmod
+### 16. 몫과 나머지를 구하는 두가지 방법 비교 - divmod(x, y)
     # 1번 코드
     x = n // 3
     y = n % 3
