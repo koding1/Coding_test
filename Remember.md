@@ -109,13 +109,23 @@
 2. 에러 발생하지 않음
     s = set([5, 6, 8])
     s.discard(7)
-    
-   
            
 설명 : discard와 remove 모두 같은 기능을 하지만 discard() 는 지우려는 element가 없어도 정상적으로 진행한다.    
 
 [77484 문제](https://programmers.co.kr/learn/courses/30/lessons/77484#fn1)
 [77484 코드](https://github.com/koding1/Coding_test/blob/main/programmers/77484(%EB%A1%9C%EB%98%90%20%EC%88%9C%EC%9C%84)-set%2Cdiscard/77484.pyy)
+
+
+### 16. divmod
+1.
+    x = n // 3
+    y = n % 3
+2.  
+    x, y = divmod(n, 3)
+           
+설명 : divmod(x, y) - 두 숫자를 인자로 전달 받아 첫번째 인자를 두번째 인자로 나눈 몫과 나머지를 tuple 형식으로 반환한다.    
+1번과 2번 예제는 기능적으로 같지만, 작은 수에는 1번 코드가 더 빠르고, 큰 수 일수록 2번 코드가 더 빠르다.
+
 
 미해결 :    
 체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
