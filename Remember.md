@@ -102,11 +102,11 @@
 [1845 코드](https://github.com/koding1/Coding_test/blob/main/programmers/1845(%ED%8F%B0%EC%BC%93%EB%AA%AC)-set/1845.py)
 
 ### 15. set에서 remove와 discard의 차이
-1. 에러 발생
+    #1. 에러 발생
     s = set([5, 6, 8])
     s.remove(7)
     
-2. 에러 발생하지 않음
+    #2. 에러 발생하지 않음
     s = set([5, 6, 8])
     s.discard(7)
            
@@ -117,10 +117,11 @@
 
 
 ### 16. divmod
-
+    # 1번 코드
     x = n // 3
     y = n % 3
-
+    
+    # 2번 코드
     x, y = divmod(n, 3)
            
 설명 : divmod(x, y) - 두 숫자를 인자로 전달 받아 첫번째 인자를 두번째 인자로 나눈 몫과 나머지를 tuple 형식으로 반환한다.    
