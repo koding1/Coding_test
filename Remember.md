@@ -138,7 +138,13 @@ i - 1 >= 0 and n[i - 1] 처럼 인덱싱과 i-1 에 대한 체크를 한 줄에 
 
 
 </br></br></br>
+
 ## 기억하고 싶은 문제  
 ### 1. 1697 메모이제이션 + BFS
 설명 : 해당 문제는 아이디어부터, 기초적인 메모이제이션 기법을 사용했기 때문에 차후 복습하고 싶다.    
 예시 : [1697](https://github.com/koding1/BOJ/tree/main/1697-(BFS)%E2%98%85)
+
+### 2. 12973 짝지어 제거하기 (slice vs pop)
+설명 : 해당 문제에서, 분명 처음 코드도 O(n) 만큼 반복문을 수행하는데 Stack을 사용한 코드와 시간 차이가 많이 나서 의아했었다.    
+이에 궁금증이 생겨 알아보니, slice와 pop 사이의 성능 차이(속도)로 인해 발생한 문제인 것 같다.
+예시 : [12973](https://github.com/koding1/Coding_test/blob/main/programmers/12973(%EC%A7%9D%EC%A0%9C%EA%B1%B0)-stack/12973.py)
