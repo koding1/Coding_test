@@ -35,3 +35,19 @@ def DFS(numbers, target, depth, value):
         DFS(numbers, target, depth+1, value - numbers[depth])
 
     return
+
+# 인상적인 코드들 (1)
+def solution(numbers, target):
+    if not numbers and target == 0 :
+        return 1
+    elif not numbers:
+        return 0
+    else:
+        return solution(numbers[1:], target-numbers[0]) + solution(numbers[1:], target+numbers[0])
+    
+# 인상적인 코드들 (2) - unpacking, itertools.product (데카르트 곱)
+from itertools import product
+def solution(numbers, target):
+    l = [(x, -x) for x in numbers]
+    s = list(map(sum, product(*l)))
+    return s.count(target)
