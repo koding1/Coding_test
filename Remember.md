@@ -153,7 +153,8 @@ i - 1 >= 0 and n[i - 1] 처럼 인덱싱과 i-1 에 대한 체크를 한 줄에 
 예시 : [12973](https://github.com/koding1/Coding_test/blob/main/programmers/12973(%EC%A7%9D%EC%A0%9C%EA%B1%B0)-stack/12973.py)
 
 ### 3. 43165 타겟 넘버 (BFS, DFS, unpacking, itertools.product(데카르트곱)) by programmers
-![43165dfs](./docs/43165dfs.jpg)
+![43165dfs](./docs/43165dfs.jpg)    
+
 설명 : BFS, DFS 의 동작과 더불어 인상적인 코드(2) 에서 unpacking, itertools.product 를 잘 활용했다.   
 BFS, DFS의 이론을 알지만 문제에서의 활용이 헷갈릴 때 참고하면 좋은 문제이다.     
 예시 :
