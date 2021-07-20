@@ -1,4 +1,4 @@
-# bfs - queue 사용
+# BFS - queue 사용
 from collections import deque
     
 def bfs_queue(numbers, target):
@@ -20,3 +20,18 @@ def bfs_queue(numbers, target):
             queue.append([v + numbers[d+1], d+1])
             queue.append([v + (-1 * numbers[d+1]), d+1])
     return answer
+
+
+# DFS - recursion
+answer = 0
+def DFS(numbers, target, depth, value):
+    global answer
+
+    if depth == len(numbers) and value == target:
+        answer += 1
+
+    if depth < len(numbers):
+        DFS(numbers, target, depth+1, value + numbers[depth])
+        DFS(numbers, target, depth+1, value - numbers[depth])
+
+    return
