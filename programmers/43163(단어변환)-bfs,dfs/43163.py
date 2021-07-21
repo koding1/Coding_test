@@ -30,8 +30,43 @@ def solution(begin, target, words):
                 visited[i] = True
 
     return 0
-  
- 
+#############################################################################################
+
+# DFS - recursion 
+answer = 0
+def is_possible_change(w1, w2):
+    for i in range(len(w1)):
+        # i 번째 인덱스를 빼고 봤을 때 같은 경우가 하나라도 있다면 -> 두 문자열이 하나만 다르다면
+        if (w1[:i]+w1[i+1:]) == (w2[:i]+w2[i+1:]):
+            return True
+    return False
+    
+def DFS(begin, target, words, depth):
+    global answer
+    if begin == target:
+        answer = depth
+        return
+        
+    for i in range(0, len(words)):
+        if is_possible_change(begin, words[i]):
+            print(begin, words[i])
+            
+            # i번째 인덱스 삭제
+            tmp = words.copy()
+            del tmp[i]
+            
+            DFS(words[i], target, tmp, depth+1)
+            
+    return
+            
+
+# begin->target 으로 가는 가장 짧은 과정을 찾는 문제
+def solution(begin, target, words):
+    
+    DFS(begin, target, words, 0)
+    
+    return answer
+#############################################################################################
   
 # 제너레이터 사용한 코드
 from collections import deque
