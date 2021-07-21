@@ -133,6 +133,13 @@ https://programmers.co.kr/learn/courses/4008/lessons/12732
 
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py
 
+### 18. yield 제너레이터(Generator)
+![yield](./docs/yield.jpg)  
+설명 : yield가 사용된 함수는 제너레이터를 반환한다.    
+https://tech.ssut.me/what-does-the-yield-keyword-do-in-python/
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/43163(%EB%8B%A8%EC%96%B4%EB%B3%80%ED%99%98)-bfs%2Cdfs/43163.py
+
+
 미해결 :    
 체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
 if i - 1 >= 0 and n[i - 1] == 2:
