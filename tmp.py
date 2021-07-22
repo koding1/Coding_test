@@ -24,12 +24,14 @@ def solution(tickets):
             if (ticket[i][0] == end):
                 can_list.append(ticket[i][1])
                 
-        print(can_list)
-        can_list.sort()
-        tmp = can_list[0]
-        del_index = ticket.index([end, tmp])
-            
-        q.append([end, tmp, (ticket[:del_index]+ticket[del_index+1:]), (visited + [tmp])])
+        # can_list 에 원소가 있다면
+        if can_list:
+            can_list.sort()
+            tmp = can_list[0]
+            del_index = ticket.index([end, tmp])
+            q.append([end, tmp, (ticket[:del_index]+ticket[del_index+1:]), (visited + [tmp])])
                 
     return visited
-  # https://programmers.co.kr/learn/courses/30/lessons/43164
+    
+print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL","SFO"]]))
+# https://programmers.co.kr/learn/courses/30/lessons/43164
