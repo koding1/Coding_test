@@ -12,15 +12,15 @@ def check(s, tmp):
     # print("-------------------")
     # 왼쪽 선에 걸친 경우
     if s >= tmp[0] and s <= tmp[1]:
-        print("T1")
+        #print("T1")
         return True
     # 오른쪽 선에 걸친 경우
     if e >= tmp[0] and e <= tmp[1]:
-        print("T2")
+        #print("T2")
         return True
     # 박스 안에 있는 경우
     if s <= tmp[0] and e >= tmp[1]:
-        print("T3")
+        #print("T3")
         return True
         
     print("F")
@@ -46,7 +46,7 @@ def solution(lines):
         
         for j in range(len(data)):
             # 시작시간과 검사할 데이터를 전달
-            if check(data[i][0], data[j]):
+            if check(data[i][1], data[j]):
                 max_tmp += 1
         
         answer = max(answer, max_tmp)
