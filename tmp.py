@@ -78,13 +78,23 @@ def solution(lines):
     i, j, cnt = 0
     num = len(lines)
     
-    # 오름차순으로 정렬
+    # 오름차순으로 정렬, E는 기본적으로 오름차순 정렬 되어 입력된다.
+    # 물론 이 과정에서 s_list[0]과 e_list[0]의 서로 짝이 달라질 수 있지만,
+    # 문제가 되지 않는다.
+    # s_list를 정렬하는 이유는 e_list의 특정 원소를 기준으로 해당 원소보다 작은
+    # s들을 찾는 것이기 때문에 서로의 짝이 맞지 않더라도 아래 알고리즘에 문제 X
+    # s_list가 있어야 e_list 의 특정 원소보다 큰 s_list 원소들을 비교하지 않을 수 있다.
+    # 특정 종료 시간과 모든 시작 시간을 비교하지 않기 위해 두 개의 리스트를 만든 것
     s_list.sort()
     
     # 둘 중 하나라도 num보다 커지면 종료
     while (i < num) and (j < num):
-        if 
-        
+        if s_list[i] < e_list[j]:
+            cnt += 1
+            max_re = max(cnt, max_re)
+            i += 1
+        else:
+            
     
     print(s_list, e_list)
     return 0
