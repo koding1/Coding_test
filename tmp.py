@@ -51,3 +51,45 @@ def solution(lines):
         
         answer = max(answer, max_tmp)
     return answer
+
+############################################################
+
+def solution(lines):
+    
+    # 시작 시간 리스트, 종료 시간 리스트
+    s_list = []
+    e_list = []
+    for i in range(len(lines)):
+        # 날짜, 시간, 트래픽 처리에 걸린 시간
+        a, b, c = lines[i].split(" ")
+        # 시간, 분, 초
+        x, y, z = b.split(":")
+        
+        # 트래픽 처리에 걸린 시간 파싱
+        c = float(c[:-1])
+        
+        second = float(x) * 3600 + float(y) * 60 + float(z)
+        # 포함 구간 1초를 추가해서 삽입 (코드 간소화)
+        e_list.append(second + 1)
+        # 종료시간 - 걸린 시간 = 시작 시간
+        s_list.append(second - c + 0.001)
+        
+    # i == 시작 시간 반복자, j == 종료 시간 반복자
+    i, j, cnt = 0
+    num = len(lines)
+    
+    # 오름차순으로 정렬
+    s_list.sort()
+    
+    # 둘 중 하나라도 num보다 커지면 종료
+    while (i < num) and (j < num):
+        if 
+        
+    
+    print(s_list, e_list)
+    return 0
+    
+print(solution([
+"2016-09-15 01:00:04.002 2.0s",
+"2016-09-15 01:00:07.000 2s"
+]))
