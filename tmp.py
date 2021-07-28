@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 # start ~ start + 1 사이에 tmp가 해당하는지 검사
 def check(s, tmp):
     
-    e = s + timedelta(seconds=1)
+    e = s + timedelta(seconds=0.999)
     # print("-------------------")
     # print(s)
     # print(e)
@@ -23,7 +23,7 @@ def check(s, tmp):
         #print("T3")
         return True
         
-    print("F")
+    #print("F")
     return False
 def solution(lines):
     answer = 0
@@ -51,9 +51,3 @@ def solution(lines):
         
         answer = max(answer, max_tmp)
     return answer
-    
-print(solution(["2016-09-15 01:00:04.001 2.0s", "2016-09-15 01:00:07.000 2s"]))
-
-# https://programmers.co.kr/learn/courses/30/lessons/17676?language=python3
-# 02.001 ~ 04.002
-# 05.001 ~ 07.000
