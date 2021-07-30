@@ -168,5 +168,14 @@ BFS, DFS의 이론을 알지만 문제에서의 활용이 헷갈릴 때 참고�
 [43165 문제](https://programmers.co.kr/learn/courses/30/lessons/43165)
 [43165 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py)
 
+### 4. 17676 카카오 추석 트래픽 (문자열 처리, 슬라이딩 윈도우, 아이디어) by programmers
+![17676](./docs/43165dfs.jpg)    
+
+설명 : 요청량이 변하는 순간은 각 로그의 시작과 끝 이라는 점을 떠올리는게 중요한 문제이다. 이 아이디어로 O(n^2) 의 복잡도로 해결 할 수 있고, 이는 혼자 구현 할 수 있었다.
+O(nlogn)의 알고리즘이 있는데, 아직 완전히 이해하지 못했다. 따라서 추후에 마저 공부하고 싶은 문제이다.
+예시 :
+[17676 문제](https://programmers.co.kr/learn/courses/30/lessons/17676)
+[17676 코드(n^2)](https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py)
+[17676 코드(nlogn)](https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py)
 
 
