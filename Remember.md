@@ -139,8 +139,15 @@ https://programmers.co.kr/learn/courses/4008/lessons/12732
 https://tech.ssut.me/what-does-the-yield-keyword-do-in-python/
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/43163(%EB%8B%A8%EC%96%B4%EB%B3%80%ED%99%98)-bfs%2Cdfs/43163.py
 
+### 19. rjust 
+    # "00123"
+    "123".rjust(5, "0")
+설명 : 문자열의 길이가 첫 번째 인자가 될 때 까지 좌측부터 두 번째 인자(문자)를 삽입한다.    
+https://kkamikoon.tistory.com/136
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17681(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)-%20%20bit_operation%2C%20rjust%2C%20replace/17681.py
 
-미해결 :    
+
+# 미해결 :    
 체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
 if i - 1 >= 0 and n[i - 1] == 2:
 ->
