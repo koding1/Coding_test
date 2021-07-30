@@ -146,6 +146,11 @@ https://tech.ssut.me/what-does-the-yield-keyword-do-in-python/
 https://kkamikoon.tistory.com/136
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17681(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)-%20%20bit_operation%2C%20rjust%2C%20replace/17681.py
 
+### 19. upper, lower, isupper, islower
+    # step 1. 소문자로 변환
+    str1 = str1.lower()
+설명 : 순서대로 대문자로 변환, 소문자로 변환, 모든 문자열이 대문자인지 체크, 모든 문자열이 소문자인지 체크      
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17677(%EC%B9%B4%EC%B9%B4%EC%98%A4%20-%20%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81)-set%2C%20isalpha%2C%20lower/17677.py
 
 # 미해결 :    
 체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
