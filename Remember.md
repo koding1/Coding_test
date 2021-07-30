@@ -169,13 +169,19 @@ BFS, DFS의 이론을 알지만 문제에서의 활용이 헷갈릴 때 참고�
 [43165 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py)
 
 ### 4. 17676 카카오 추석 트래픽 (문자열 처리, 슬라이딩 윈도우, 아이디어) by programmers
-![17676](./docs/43165dfs.jpg)    
+![17676](./docs/17676.jpg)    
 
 설명 : 요청량이 변하는 순간은 각 로그의 시작과 끝 이라는 점을 떠올리는게 중요한 문제이다. 이 아이디어로 O(n^2) 의 복잡도로 해결 할 수 있고, 이는 혼자 구현 할 수 있었다.
 O(nlogn)의 알고리즘이 있는데, 아직 완전히 이해하지 못했다. 따라서 추후에 마저 공부하고 싶은 문제이다.
 예시 :
 [17676 문제](https://programmers.co.kr/learn/courses/30/lessons/17676)
-[17676 코드(n^2)](https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py)
-[17676 코드(nlogn)](https://github.com/koding1/Coding_test/blob/main/programmers/43165(%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84)-bfs,dfs/43165.py)
+[17676 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17676(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%B6%94%EC%84%9D%ED%8A%B8%EB%9E%98%ED%94%BD)/17676.py)
 
 
+### 5. 17681 카카오 비밀 지도 (비트 연산자, rjust) by programmers
+![17681](./docs/17681.jpg)    
+
+설명 : bit 연산자(이 문제에서는 '|' )를 사용하는게 핵심인 문제이다. 또한 rjust 를 처음 사용하게 된 문제여서 기억하고 싶다. 아이디어를 떠올리는 난이도는 어렵지 않았다.
+예시 :
+[17681 문제](https://programmers.co.kr/learn/courses/30/lessons/17681?language=python3)
+[17681 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17681(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)-%20%20bit_operation%2C%20rjust%2C%20replace/17681.py)
