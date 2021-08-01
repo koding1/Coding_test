@@ -200,3 +200,4 @@ O(nlogn)의 알고리즘이 있는데, 아직 완전히 이해하지 못했다. 
         print(re.match('[\d+]', st))
         # 2. <_sre.SRE_Match object; span=(0, 3), match='103'>
         print(re.match('\d+', st))
+해결 : '[\d+]' 은 '숫자 여러 개 반복' 이 아니라 숫자 or '+' 이다. '\d+'나, '[\d]+' 로 쓰는 것이 옳다.
