@@ -152,12 +152,6 @@ https://kkamikoon.tistory.com/136
 설명 : 순서대로 대문자로 변환, 소문자로 변환, 모든 문자열이 대문자인지 체크, 모든 문자열이 소문자인지 체크      
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17677(%EC%B9%B4%EC%B9%B4%EC%98%A4%20-%20%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81)-set%2C%20isalpha%2C%20lower/17677.py
 
-# 미해결 :    
-체육복  https://programmers.co.kr/learn/courses/30/lessons/42862/solution_groups?language=python3   
-if i - 1 >= 0 and n[i - 1] == 2:
-->
-i - 1 >= 0 and n[i - 1] 처럼 인덱싱과 i-1 에 대한 체크를 한 줄에 해도 out of range 오류가 발생하지 않는건가요 ?
-
 
 </br></br></br>
 
@@ -197,3 +191,12 @@ O(nlogn)의 알고리즘이 있는데, 아직 완전히 이해하지 못했다. 
 예시 :
 [17681 문제](https://programmers.co.kr/learn/courses/30/lessons/17681?language=python3)
 [17681 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17681(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)-%20%20bit_operation%2C%20rjust%2C%20replace/17681.py)
+
+# 미해결 :    
+1. match 결과에 차이가 발생하는 이유    
+
+        st = '103D'
+        # 1. <_sre.SRE_Match object; span=(0, 1), match='1'>
+        print(re.match('[\d+]', st))
+        # 2. <_sre.SRE_Match object; span=(0, 3), match='103'>
+        print(re.match('\d+', st))
