@@ -43,6 +43,55 @@ def solution(n, t, m, timetable):
 print(solution(10, 60, 45,["23:59","23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59", "23:59"]))
 
 ############################################################################################
+# 내가 작성한 코드 2 -> 1에 대한 개선. 아래 코드와 속도 비슷하지만 아래 코드가 조금 더 
+from collections import deque
+
+def solution(n, t, m, timetable):
+    answer = 0
+    
+    # timetable을 분으로 변환한 큐
+    tq = deque()
+    
+    # 분으로 단위 통일
+    timetable = sorted(timetable)
+    for i in range(len(timetable)):
+        hh, mm = [int(j) for j in timetable[i].split(':')]
+        mm = (hh * 60) + mm
+        tq.append(mm)
+    
+    # S = 09:00 를 분으로 변환
+    S = 540
+    # E = 마지막 탑승 시간
+    E = 540 + (n-1) * t
+    for i in range(n):
+        corrent = S + (i * t)
+        
+        if len(tq) < m:
+            return '%02d:%02d' % (E//60, E%60)
+                    
+        if i == n - 1:
+            cnt = 0
+            while tq:
+                if cnt < m and tq[0] <= corrent:
+                    if cnt == m - 1:
+                        if tq[0] <= corrent:
+                            return '%02d:%02d' % ((tq[0]-1)//60, (tq[0]-1)%60)
+                        else:
+                            return '%02d:%02d' % (E//60, E%60)
+                    cnt += 1
+                    tq.popleft()
+                else:
+                    return '%02d:%02d' % (E//60, E%60)
+
+        else:
+            cnt = 0
+            while tq:
+                if cnt < m and tq[0] <= corrent:
+                    cnt += 1
+                    tq.popleft()
+                else:
+                    break
+##############################################################################################################
 # 효율적인 코드 (속도가 더 빠름)
 def solution(n,t,m,timetable):
     # 시간을 분으로
