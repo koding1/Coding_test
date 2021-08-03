@@ -152,6 +152,14 @@ https://kkamikoon.tistory.com/136
 설명 : 순서대로 대문자로 변환, 소문자로 변환, 모든 문자열이 대문자인지 체크, 모든 문자열이 소문자인지 체크      
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17677(%EC%B9%B4%EC%B9%B4%EC%98%A4%20-%20%EB%89%B4%EC%8A%A4%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81)-set%2C%20isalpha%2C%20lower/17677.py
 
+### 19. deque - maxlen
+    q = deque(maxlen=0)
+    print(q)
+    # 오류 발생하지 않음
+    q.append("city")
+    print(q)
+설명 : 큐를 특정 길이로 제한, 예시 문항에서 maxlen을 사용하지 않을 시, 20 line에 "q.append(city)" 부분에 캐시 크기가 0 일 때 append 하지 않도록 따로 지정해줘야 한다. 큐를 특정 길이로 제한 해놓는다면 자동으로 append 하지 않게 처리 되기 때문에 많은 경우에 유용하다.
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17680(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%BA%90%EC%8B%9C)-cache%2C%20maxlen%2C%20LRU/17680.py
 
 </br></br></br>
 
@@ -191,6 +199,12 @@ O(nlogn)의 알고리즘이 있는데, 아직 완전히 이해하지 못했다. 
 예시 :
 [17681 문제](https://programmers.co.kr/learn/courses/30/lessons/17681?language=python3)
 [17681 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17681(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)-%20%20bit_operation%2C%20rjust%2C%20replace/17681.py)
+
+### 6. 17680 카카오 캐시 (cache(LRU), maxlen) by programmers
+설명 : LRU 방식의 캐시 알고리즘에 대한 참고 및 deque 객체에 maxlen을 사용한 문제이다.
+예시 :
+[17681 문제](https://programmers.co.kr/learn/courses/30/lessons/17680)      
+[17681 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17680(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%BA%90%EC%8B%9C)-cache%2C%20maxlen%2C%20LRU/17680.py)
 
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
