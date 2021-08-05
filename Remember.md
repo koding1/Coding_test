@@ -161,6 +161,13 @@ https://kkamikoon.tistory.com/136
 설명 : 큐를 특정 길이로 제한, 예시 문항에서 maxlen을 사용하지 않을 시, 20 line에 "q.append(city)" 부분에 캐시 크기가 0 일 때 append 하지 않도록 따로 지정해줘야 한다. 큐를 특정 길이로 제한 해놓는다면 자동으로 append 하지 않게 처리 되기 때문에 많은 경우에 유용하다.
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17680(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%BA%90%EC%8B%9C)-cache%2C%20maxlen%2C%20LRU/17680.py
 
+### 20. set - 교집합, 합집합 표현
+    set1 = set([1,2,3,4])
+    set2 = set([4,5,6,7])
+    print(set1 | set2)
+설명 : set 자료형에서 '|' -> 합집합, '&' -> 합집합
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17679(%EC%B9%B4%EC%B9%B4%EC%98%A4-%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D)-idea%2C/17679.py
+
 </br></br></br>
 
 ## 기억하고 싶은 문제  
