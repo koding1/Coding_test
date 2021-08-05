@@ -213,6 +213,15 @@ O(nlogn)의 알고리즘이 있는데, 아직 완전히 이해하지 못했다. 
 [17681 문제](https://programmers.co.kr/learn/courses/30/lessons/17680)      
 [17681 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17680(%EC%B9%B4%EC%B9%B4%EC%98%A4-%EC%BA%90%EC%8B%9C)-cache%2C%20maxlen%2C%20LRU/17680.py)
 
+### 6. 17679 카카오 프렌즈4블록 (set를 이용한 합집합, idea, enumerate) by programmers
+![17679](./docs/17679.jpg) 
+설명 : 코드 링크에 아래 쪽 '효율적인 코드' 를 보면 된다.    
+set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활용했다.   
+인상적인 것은 블록 제거 후 재구성을 편리하게 하기 위해 행과 열을 서로 치환하여 문제를 진행한다는 아이디어이다.    
+예시 :
+[17679 문제](https://programmers.co.kr/learn/courses/30/lessons/17679)      
+[17679 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17679(%EC%B9%B4%EC%B9%B4%EC%98%A4-%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D)-idea%2C/17679.py)
+
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
 
