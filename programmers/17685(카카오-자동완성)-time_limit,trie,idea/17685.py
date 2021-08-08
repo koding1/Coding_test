@@ -33,3 +33,4 @@ def solution(words):
 print(solution(["word", "war", "warrior", "world"]))
 
 # Trie 자료 구조 사용
+# 아직 이해 못함
