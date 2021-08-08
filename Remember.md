@@ -168,6 +168,15 @@ https://kkamikoon.tistory.com/136
 설명 : set 자료형에서 '|' -> 합집합, '&' -> 합집합
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/17679(%EC%B9%B4%EC%B9%B4%EC%98%A4-%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D)-idea%2C/17679.py
 
+### 21. sort - key를 사용해서 대소문자 구별 없이 정렬하기
+    a = [ "bbb", "AAA", "DDD", "CCC", "aaa" ]
+    a.sort(key=str.lower)
+    print " ".join(a)
+    # 출력 결과: AAA aaa bbb CCC DDD
+
+설명 : sort 함수에서 key = str.lower 를 사용하면 대소문자를 구별하지 않고 정렬 할 수 있다.
+예시 : 
+
 </br></br></br>
 
 ## 기억하고 싶은 문제  
