@@ -177,6 +177,16 @@ https://kkamikoon.tistory.com/136
 설명 : sort 함수에서 key = str.lower 를 사용하면 대소문자를 구별하지 않고 정렬 할 수 있다.
 예시 : 
 
+### 22. 정규 표현식 두 문장의 차이 '(' 의 유무
+    files = ["img1.png", "IMg01.png", "img01.png", "IMG01.png"]
+    tmp = [re.split(r"([0-9]+)", s) for s in files]
+    # tmp -> [['img', '1', '.png'], ['IMg', '01', '.png'], ['img', '01', '.png'], ['IMG', '01', '.png']]
+    tmp = [re.split(r"[0-9]+", s) for s in files]
+    # tmp -> [['img', '.png'], ['IMg', '.png'], ['img', '.png'], ['IMG', '.png']]
+
+설명 : sort 함수에서 key = str.lower 를 사용하면 대소문자를 구별하지 않고 정렬 할 수 있다.
+예시 : 
+
 </br></br></br>
 
 ## 기억하고 싶은 문제  
@@ -240,3 +250,13 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
         # 2. <_sre.SRE_Match object; span=(0, 3), match='103'>
         print(re.match('\d+', st))
 해결 : '[\d+]' 은 '숫자 여러 개 반복' 이 아니라 숫자 or '+' 이다. '\d+'나, '[\d]+' 로 쓰는 것이 옳다.
+
+2. 정규 표현식 두 문장의 차이 '(' 의 유무     
+
+        files = ["img1.png", "IMg01.png", "img01.png", "IMG01.png"]
+        tmp = [re.split(r"([0-9]+)", s) for s in files]
+        # tmp -> [['img', '1', '.png'], ['IMg', '01', '.png'], ['img', '01', '.png'], ['IMG', '01', '.png']]
+        tmp = [re.split(r"[0-9]+", s) for s in files]
+        # tmp -> [['img', '.png'], ['IMg', '.png'], ['img', '.png'], ['IMG', '.png']]
+해결 : 그냥 그런가보다.. ㅠ 어떤 원리인지 잘 이해 안감
+        
