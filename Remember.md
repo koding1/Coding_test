@@ -173,7 +173,12 @@ https://kkamikoon.tistory.com/136
     a.sort(key=str.lower)
     print " ".join(a)
     # 출력 결과: AAA aaa bbb CCC DDD
-
+    
+    f = [["BBB", 2], ["ccc", 1], ["bbb", 1], ["BBB", 0]]
+    # x[0]을 대소문자 구별없이 먼저 정렬하고, 그 후에 x[1]을 기준으로 정렬
+    f.sort(key = lambda x : (x[0].lower(), x[1]))
+    # -> x[0].lower() 처럼 사용 할 수도 있다. 
+    # [["BBB", 0], ["bbb", 1], ["BBB", 2], ["ccc", 1]]
 설명 : sort 함수에서 key = str.lower 를 사용하면 대소문자를 구별하지 않고 정렬 할 수 있다.
 예시 : 
 
@@ -186,6 +191,7 @@ https://kkamikoon.tistory.com/136
 
 설명 : sort 함수에서 key = str.lower 를 사용하면 대소문자를 구별하지 않고 정렬 할 수 있다.
 예시 : 
+
 
 </br></br></br>
 
