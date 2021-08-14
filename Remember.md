@@ -193,7 +193,7 @@ https://kkamikoon.tistory.com/136
 예시 : 
 
 ### 23. 소수(prime number) 판단하기
-![prime](./docs/prime.jpg)     
+![prime](./docs/prime.JPG)     
     
     import math
     # 2부터 x의 제곱근까지만 확인
