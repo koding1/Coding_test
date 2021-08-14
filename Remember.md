@@ -205,17 +205,27 @@ https://kkamikoon.tistory.com/136
 이 때 시간 복잡도는 O(N**(1/2)) 이다.
 예시 : 
 
-### 24. from itertools import combinations
-![prime](./docs/prime.JPG)     
-    
+### 24-1. 하나의 리스트에서 모든 조합을 구하기 - from itertools import combinations
+     
     # combinations(items, 3) -> items 리스트 원소 이루어진 크기가 3인 모든 조합을 구하기
     items = ['1', '2', '3', '4',]
     print(combinations(itmes, 3))
-    # ['1', '2', '3'] ['1', '2', '4'] ['2', '3', '4']
+    # [('1', '2', '3'), ('1', '2', '4'), ('2', '3', '4')]
     
 설명 : combinations(nums, 3) -> nums 리스트 원소 이루어진 크기가 3인 모든 조합을 구하기    
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/12977(%EC%86%8C%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0)-combinations%2Cis_prime/12977.py
 
+### 24-2. 두개 이상의 리스트에서 모든 조합을 구하기 - from itertools import product     
+    
+    from itertools import product 
+    items = [['1', '2'], ['a', 'b'], ['!', '@']] 
+    list(product(*items)) 
+    # [('1', 'a', '!'), ('1', 'a', '@'), ('1', 'b', '!'), ('1', 'b', '@'), 
+       ('2', 'a', '!'), ('2', 'a', '@'), ('2', 'b', '!'), ('2', 'b', '@')]
+
+출처: https://ourcstory.tistory.com/414 [불로]  
+설명 : combinations(nums, 3) -> nums 리스트 원소 이루어진 크기가 3인 모든 조합을 구하기    
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/12977(%EC%86%8C%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0)-combinations%2Cis_prime/12977.py
 </br></br></br>
 
 ## 기억하고 싶은 문제  
