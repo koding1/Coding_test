@@ -192,6 +192,18 @@ https://kkamikoon.tistory.com/136
 설명 : sort 함수에서 key = str.lower 를 사용하면 대소문자를 구별하지 않고 정렬 할 수 있다.
 예시 : 
 
+### 23. 소수(prime number) 판단하기
+![prime](./docs/prime.jpg)     
+    
+    import math
+    # 2부터 x의 제곱근까지만 확인
+    for i in range(2, int(math.sqrt(x)) + 1):
+        if x % i == 0:
+            return False # 소수 아님
+    return True # 소수
+설명 : 어떤 수 n이 소수인지 확인 할 때 n의 제곱근 까지만 확인하면 된다.    
+이 때 시간 복잡도는 O(N**(1/2)) 이다.
+예시 : 
 
 </br></br></br>
 
