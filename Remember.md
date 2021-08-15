@@ -299,3 +299,14 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
         # tmp -> [['img', '.png'], ['IMg', '.png'], ['img', '.png'], ['IMG', '.png']]
 해결 : 그냥 그런가보다.. ㅠ 어떤 원리인지 잘 이해 안감
         
+3. 멀쩡한 사각형 - gcd, idea
+![620481](./docs/620481.jpg)      
+빨간 네모가 총 4번 반복 된다. 이 때 '4' 는 8과 12의 gcd(최대공약수) 이다.
+![620482](./docs/620482.jpg)      
+또한, 한 네모 안에서 사용 할 수 없게되는 단위 사각형의 수는 가로 + 세로 - 1 이다.     
+1을 빼는 이유는 겹치는 사각형 때문이다.     
+
+아이디어가 진짜 어려웠던 문제..     
+아직 대각선이 지나갈 때 가로와 세로 길이 만큼 사각형이 잘린다는 것이 잘 이해가 가지 않는다.     
+코드 : https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8562048(%EB%A9%80%EC%A9%A1%ED%95%9C%EC%82%AC%EA%B0%81%ED%98%95)-gcd%2Cidea/62048.py
+설명 : https://leedakyeong.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%A9%80%EC%A9%A1%ED%95%9C-%EC%82%AC%EA%B0%81%ED%98%95-in-python
