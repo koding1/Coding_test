@@ -249,7 +249,29 @@ https://kkamikoon.tistory.com/136
     import math
     # x, y의 최소공배수
     print(math.lcm(x,y))
+
+### 26. heapq 라이브러리 - 최소 힙 자료구조
+![heaqp](./docs/heaqp.jpg)
+    
+    import heaqp
+    
+    #힙 불변성을 유지하면서, item 값을 heap으로 푸시합니다.
+    heapq.heappush(heap, item)
+
+    # heqp에서 가장 작은 항목을 pop하고 반환 (힙 불변성 유지)
+    heapq.heappop(heap)
+    
+    # 리스트 x를 선형 시간으로 제자리에서 힙으로 변환합니다.
+    heapq.heapify(x)  
+    
+설명 : heapq 라이브러리를 사용한 최소 힙 자료구조 구현 ( 최대 힙은 출처 첫 번째 링크 참조 ) 
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/42626(%EB%8D%94%EB%A7%B5%EA%B2%8C)-min_heap/42626.py      
+출처 및 참조 :       
+https://littlefoxdiary.tistory.com/3      
+https://docs.python.org/ko/3/library/heapq.html
+
 </br></br></br>
+
 
 ## 기억하고 싶은 문제  
 ### 1. 1697 메모이제이션 + BFS
