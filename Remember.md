@@ -325,6 +325,17 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 [17679 문제](https://programmers.co.kr/learn/courses/30/lessons/17679)      
 [17679 코드](https://github.com/koding1/Coding_test/blob/main/programmers/17679(%EC%B9%B4%EC%B9%B4%EC%98%A4-%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D)-idea%2C/17679.py)
 
+### 7. 43238 입국심사 (이분 탐색(Binaray search), 파라메트릭 서치(Parametric search) by programmers
+
+설명 : 이분 탐색을 깔끔하게 다룬 문제라서 기억하고 싶다.    
+제한 사항(심사 시간 : 1분 ~ 1,000,000,000분)을 보고 이진 탐색이라는 키워드를 떠올려야 한다.   
+
+파라메트릭 서치 (Parametric search) : 최적화 문제를 결정 문제(예, 아니오로 답하는 문제)로 바꾸어 해결하는 기법. '원하는 조건을 만족하는 가장 알맞은 값을 찾는 문제'       
+
+예시 :
+[43238 문제](https://programmers.co.kr/learn/courses/30/lessons/43238)      
+[43238 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43238(%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC)-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%2C%ED%8C%8C%EB%9D%BC%EB%A9%94%ED%8A%B8%EB%A6%AD%EC%84%9C%EC%B9%98/43238.py)    
+참조 : https://sanghyeok.tistory.com/7
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
 
