@@ -268,8 +268,36 @@ https://kkamikoon.tistory.com/136
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/42626(%EB%8D%94%EB%A7%B5%EA%B2%8C)-min_heap/42626.py      
 출처 및 참조 :       
 https://littlefoxdiary.tistory.com/3      
-https://docs.python.org/ko/3/library/heapq.html
+https://docs.python.org/ko/3/library/heapq.html         
 
+
+### 27. 이분 탐색( == 이진 탐색) - Binary search
+    
+    while start <= end:
+        # 이번 차례 검사할 시간(분)
+        mid = (start + end)//2
+        immigration_count = 0
+        
+        # 조건 : 모든 인원이 해당 시간에 검사를 받을 수 있는지
+        # 조건에 대한 판단은 sum(mid // 심사에 걸리는 시간)과 n을 검사
+        # mid // 심사 시간 은 해당 검사관이 mid분에 검사 할 수 있는 최대 인원을 의탐색의
+        
+        immigration_count = sum([(mid//i) for i in times])
+        
+        # 해당 시간(mid분) 내에 n명을 모두 검사 할 수 있다면 (시간을 mid 이하로 줄일 수 있음)
+        if immigration_count >= n: # 왼쪽으로 범위 축소
+            end = mid - 1
+            minimum_time = mid
+        else: # 오른쪽으로 범위 축소
+            start = mid + 1
+    
+설명 : 이진 탐색 구현
+
+예시 :
+[43238 문제](https://programmers.co.kr/learn/courses/30/lessons/43238)      
+[43238 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43238(%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC)-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%2C%ED%8C%8C%EB%9D%BC%EB%A9%94%ED%8A%B8%EB%A6%AD%EC%84%9C%EC%B9%98/43238.py)    
+출처 및 참조 :       
+https://sanghyeok.tistory.com/7
 </br></br></br>
 
 
