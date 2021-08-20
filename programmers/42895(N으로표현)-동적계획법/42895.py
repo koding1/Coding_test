@@ -34,7 +34,7 @@ def solution(N, number):
 print(solution(2, 11))
 
 
-# 같은 로직이지만 set를 사용했을 때 훨씬 빠르다 (속도 차이) 
+# 같은 로직이지만 set를 사용했을 때 훨씬 빠르다 (중복된 원소를 제거하여 필요 없는 계산 수를 줄인다) 
 
 def solution(N, number):
 
