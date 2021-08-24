@@ -342,8 +342,8 @@ https://sanghyeok.tistory.com/7
 설명 : 병합 정렬(Merge sort)
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/BJ/sort/2751.py     
 출처 및 참조 :       
-https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC   
-
+https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC       
+https://assaeunji.github.io/python/2020-05-06-bj2751/
 </br></br></br>
 
 
