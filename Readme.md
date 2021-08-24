@@ -22,7 +22,7 @@
 예시 : [2178](https://www.acmicpc.net/problem/2178)    
 
 ### 5. 공백없는 문자열 한글자씩 리스트에 나누어 입력 받기
-        1. my_list = [list(map(int, input()))]    
+        1. my_list = list(map(int, input()))    
         
         2. maze = [list(map(int, input())) for _ in range(N)]
         
