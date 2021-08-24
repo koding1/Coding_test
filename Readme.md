@@ -302,44 +302,43 @@ https://sanghyeok.tistory.com/7
 ### 28. 병합(합병) 정렬(Merge sort) 구현
 ![merge](./docs/merge-sort.gif)
 
-def merge_sort(array):
-    
-    # 종료 조건
-    if len(array) == 1:
-        return array
-    
-    mid = (0 + len(array)) // 2
-    left = merge_sort(array[:mid])
-    right = merge_sort(array[mid:])
-    
-    i = 0
-    j = 0
-    k = 0
-    
-    while True:
-        if left[i] <= right[j]:
-            array[k] = left[i]
-            k += 1
-            i += 1
-        else:
-            array[k] = right[j]
-            k += 1
-            j += 1
-        
-        if i >= len(left): # left 는 모두 삽입
-            while j < len(right): # 남은 right 삽입
-                array[k] = right[j]
-                k += 1
-                j += 1
-            break
-        if j >= len(right): # right 는 모두 삽입
-            while i < len(left): # 남은 left 삽입
+    def merge_sort(array):
+        # 종료 조건
+        if len(array) == 1:
+            return array
+
+        mid = (0 + len(array)) // 2
+        left = merge_sort(array[:mid])
+        right = merge_sort(array[mid:])
+
+        i = 0
+        j = 0
+        k = 0
+
+        while True:
+            if left[i] <= right[j]:
                 array[k] = left[i]
                 k += 1
                 i += 1
-            break
-    
-    return array
+            else:
+                array[k] = right[j]
+                k += 1
+                j += 1
+
+            if i >= len(left): # left 는 모두 삽입
+                while j < len(right): # 남은 right 삽입
+                    array[k] = right[j]
+                    k += 1
+                    j += 1
+                break
+            if j >= len(right): # right 는 모두 삽입
+                while i < len(left): # 남은 left 삽입
+                    array[k] = left[i]
+                    k += 1
+                    i += 1
+                break
+
+        return array
 설명 : 병합 정렬(Merge sort)
 예시 : https://github.com/koding1/Coding_test/blob/main/programmers/BJ/sort/2751.py     
 출처 및 참조 :       
