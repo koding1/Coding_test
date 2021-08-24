@@ -1,0 +1,7 @@
+N, M = map(int, input().split(' '))
+
+maze = [[] for i in range(N)]
+
+for i in range(N):
+    maze[i] = list(map(int, input()))
+    print(maze[i])
