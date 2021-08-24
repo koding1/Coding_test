@@ -298,6 +298,53 @@ https://docs.python.org/ko/3/library/heapq.html
 [43238 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43238(%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC)-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%2C%ED%8C%8C%EB%9D%BC%EB%A9%94%ED%8A%B8%EB%A6%AD%EC%84%9C%EC%B9%98/43238.py)    
 출처 및 참조 :       
 https://sanghyeok.tistory.com/7
+
+### 28. 병합(합병) 정렬(Merge sort) 구현
+![merge](./docs/merge-sort.gif)
+
+def merge_sort(array):
+    
+    # 종료 조건
+    if len(array) == 1:
+        return array
+    
+    mid = (0 + len(array)) // 2
+    left = merge_sort(array[:mid])
+    right = merge_sort(array[mid:])
+    
+    i = 0
+    j = 0
+    k = 0
+    
+    while True:
+        if left[i] <= right[j]:
+            array[k] = left[i]
+            k += 1
+            i += 1
+        else:
+            array[k] = right[j]
+            k += 1
+            j += 1
+        
+        if i >= len(left): # left 는 모두 삽입
+            while j < len(right): # 남은 right 삽입
+                array[k] = right[j]
+                k += 1
+                j += 1
+            break
+        if j >= len(right): # right 는 모두 삽입
+            while i < len(left): # 남은 left 삽입
+                array[k] = left[i]
+                k += 1
+                i += 1
+            break
+    
+    return array
+설명 : 병합 정렬(Merge sort)
+예시 : https://github.com/koding1/Coding_test/blob/main/programmers/BJ/sort/2751.py     
+출처 및 참조 :       
+https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC   
+
 </br></br></br>
 
 
