@@ -440,3 +440,7 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 아직 대각선이 지나갈 때 가로와 세로 길이 만큼 사각형이 잘린다는 것이 잘 이해가 가지 않는다.     
 코드 : https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8562048(%EB%A9%80%EC%A9%A1%ED%95%9C%EC%82%AC%EA%B0%81%ED%98%95)-gcd%2Cidea/62048.py      
 설명 : https://leedakyeong.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%A9%80%EC%A9%A1%ED%95%9C-%EC%82%AC%EA%B0%81%ED%98%95-in-python
+
+# 참조 사이트
+
+https://chloeelog.notion.site/KAKAO-BLIND-3-21c9ac7180d14874a5c7ba6848da305e
