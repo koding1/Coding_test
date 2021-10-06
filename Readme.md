@@ -407,9 +407,26 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 파라메트릭 서치 (Parametric search) : 최적화 문제를 결정 문제(예, 아니오로 답하는 문제)로 바꾸어 해결하는 기법. '원하는 조건을 만족하는 가장 알맞은 값을 찾는 문제'       
 
 예시 :
-[43238 문제](https://programmers.co.kr/learn/courses/30/lessons/43238)      
+[43238 문제](https://programmers.co.kr/learn/courses/30/lessons/42578)      
 [43238 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43238(%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC)-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%2C%ED%8C%8C%EB%9D%BC%EB%A9%94%ED%8A%B8%EB%A6%AD%EC%84%9C%EC%B9%98/43238.py)    
 참조 : https://sanghyeok.tistory.com/7
+
+### 8. 42578 위장 (해시, mathematical idea) by programmers
+
+설명 : 단순한 경우의 수 곱하기 문제인데, 수학적 아이디어를 떠올리기가 쉽지 않았다.
+
+
+    if item[1] not in d:
+        # 1로 시작하는 이유 : 해당 부위를 입지 않을 경우를 추가하기 위해서
+        d[item[1]] = 1
+
+
+예시 :
+[42578 문제](https://programmers.co.kr/learn/courses/30/lessons/43238)      
+[42578 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542578(%EC%9C%84%EC%9E%A5)-%ED%95%B4%EC%8B%9C%2C%EC%88%98%ED%95%99%EC%A0%81%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42578.py)    
+참조 : https://sanghyeok.tistory.com/7
+
+
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
 
