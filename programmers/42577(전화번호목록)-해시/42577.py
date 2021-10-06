@@ -1,6 +1,6 @@
 def solution(phone_book):
     
-    # 정렬하면 for 문 1 번으로 해결 가능
+    # 핵심 : 정렬하면 for 문 1 번으로 해결 가능
     phone_book.sort()
     
     for i in range(0, len(phone_book) - 1):
