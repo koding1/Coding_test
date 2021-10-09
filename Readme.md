@@ -457,7 +457,7 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 위의 사진은 5초간의 주식 가격 변화를 표현한 그림이다.     
 
 Step 1.           
-Stack을 초기화 한다. 이 때 0은 0초를 의미한다.
+Stack을 초기화 한다. 이 때 0은 0초를 의미한다.     
 ![425842](./docs/425842.jpg)     
 
 Step 2.      
@@ -472,9 +472,9 @@ now price(3)가 top price(2) 보다 크므로 1번 기준에 따라 Stack에 now
 
 Step 4.      
 now second는 3이고 now price는 1이다. 1번 기준을 만족 시키면서 3을 삽입 해야 하므로, now price(1) 보다 큰 price를 가지고 있는 second는 제거된다.   
-1번 순서에서 top second(2) 일 때의 가격 3과 now price(1)을 비교하고, now price보다 높으므로 stack pop이 이루어진다.   
+1번 순서에서 top second(2) 일 때의 가격 3과 now price(1)을 비교하고, now price보다 높으므로 stack pop이 이뤄진다.   
 이 때, top second, 즉 2초 의 answer는 now second - top second = 3 - 2 = 1 이 된다.      
-2번 순서에서 top second(1) 일 때의 가격 2와 now price(1)을 비교하고, now price보다 높으므로 stack pop이 이루어진다.    이 때, top second, 즉 1초 의 answer는 now second - top second = 3 - 1 = 2 이 된다.      
+2번 순서에서 top second(1) 일 때의 가격 2와 now price(1)을 비교하고, now price보다 높으므로 stack pop이 이뤄진다.    이 때, top second, 즉 1초 의 answer는 now second - top second = 3 - 1 = 2 이 된다.      
 3번 순서에서 now price(1)이 top price(0)보다 높으므로, now second 3이 삽입된다.  
 ![425845](./docs/425845.jpg)     
 
@@ -489,12 +489,19 @@ now price(5)가 top price(4) 보다 크므로 1번 기준에 따라 Stack에 now
 ![425847](./docs/425847.jpg)  
 
 Step 7.      
-Stack 내의 남은 원소들이 남아있다.    
+Stack 내의 남은 원소들이 남아있다. (5, 4, 3, 0)
+5초 answer -> 5 - 5      
+4초 answer -> 5 - 4      
+3초 answer -> 5 - 3      
+0초 answer -> 5 - 0     
+Stack 남이 있는 second 들은 하락을 경험한 적 없는 시간이므로, '끝 시간(5) - 해당 시간' 을 통해 얼마 동안 상승장을 유지했는지 구할 수 있다.
+answer 1, 2는 Step 4에서 각각 2, 1 로 정해졌다.     
 
+최종 답은 5 2 1 2 1 0 이 된다.   
 
 예시 :
-[42578 문제](https://programmers.co.kr/learn/courses/30/lessons/42584)      
-[42578 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542584(%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9)-%EC%8A%A4%ED%83%9D%2C%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42584.py)    
+[42584 문제](https://programmers.co.kr/learn/courses/30/lessons/42584)      
+[42584 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542584(%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9)-%EC%8A%A4%ED%83%9D%2C%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42584.py)    
 참조 : https://sanghyeok.tistory.com/7
 
 
