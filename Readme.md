@@ -462,12 +462,12 @@ Stack을 초기화 한다. 이 때 0은 0초를 의미한다.
 
 Step 2.      
 top second는 0, top price는 0초 일 때 가격, 즉 0이다. now second는 1이며, now price 는 2이다.    
-now price(2)가 top price(0) 보다 크므로 1번 기준에 따라 Stack에 now second(1) 을 삽입한다.
+now price(2)가 top price(0) 보다 크므로 1번 기준에 따라 Stack에 now second(1) 을 삽입한다.      
 ![425843](./docs/425843.jpg)     
 
 Step 3.      
 top second는 1, top price는 1초 일 때 가격, 즉 2이다. now second는 2이며, now price 는 3이다.    
-now price(3)가 top price(2) 보다 크므로 1번 기준에 따라 Stack에 now second(2) 을 삽입한다.
+now price(3)가 top price(2) 보다 크므로 1번 기준에 따라 Stack에 now second(2) 을 삽입한다.     
 ![425844](./docs/425844.jpg)     
 
 Step 4.      
