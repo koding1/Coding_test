@@ -444,6 +444,59 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 [42578 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542578(%EC%9C%84%EC%9E%A5)-%ED%95%B4%EC%8B%9C%2C%EC%88%98%ED%95%99%EC%A0%81%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42578.py)    
 참조 : https://sanghyeok.tistory.com/7
 
+### 9. 42584 주식가격 (Stack, idea) by programmers
+
+설명 : 해당 문제를 스택으로 해결하는 아이디어를 떠올리기 쉽지 않았다.
+
+기본적인 아이디어는
+1. 스택의 가장 top 원소는 스택 내에 있는 원소 중 가장 높은 가격을 가졌던 시간이 되도록 유지한다.
+2. 새로운 시간이 stack에 들어올 때, 1번 규칙이 지켜지도록 해야하므로 새로 들어올 시간의 가격이 top 시간의 가격보다 높으면 그대로 삽입하고, 그렇지 않다면 top을 pop 함과 동시에 top 시간대의 answer를 결정한다.
+3. 이 때 top 시간대의 answer는 새로 들어올 시간 - top 시간 이다.
+
+![425841](./docs/425841.jpg)      
+위의 사진은 5초간의 주식 가격 변화를 표현한 그림이다.     
+
+Step 1.           
+Stack을 초기화 한다. 이 때 0은 0초를 의미한다.
+![425842](./docs/425842.jpg)     
+
+Step 2.      
+top second는 0, top price는 0초 일 때 가격, 즉 0이다. now second는 1이며, now price 는 2이다.    
+now price(2)가 top price(0) 보다 크므로 1번 기준에 따라 Stack에 now second(1) 을 삽입한다.
+![425843](./docs/425843.jpg)     
+
+Step 3.      
+top second는 1, top price는 1초 일 때 가격, 즉 2이다. now second는 2이며, now price 는 3이다.    
+now price(3)가 top price(2) 보다 크므로 1번 기준에 따라 Stack에 now second(2) 을 삽입한다.
+![425844](./docs/425844.jpg)     
+
+Step 4.      
+now second는 3이고 now price는 1이다. 1번 기준을 만족 시키면서 3을 삽입 해야 하므로, now price(1) 보다 큰 price를 가지고 있는 second는 제거된다.   
+1번 순서에서 top second(2) 일 때의 가격 3과 now price(1)을 비교하고, now price보다 높으므로 stack pop이 이루어진다.   
+이 때, top second, 즉 2초 의 answer는 now second - top second = 3 - 2 = 1 이 된다.      
+2번 순서에서 top second(1) 일 때의 가격 2와 now price(1)을 비교하고, now price보다 높으므로 stack pop이 이루어진다.    이 때, top second, 즉 1초 의 answer는 now second - top second = 3 - 1 = 2 이 된다.      
+3번 순서에서 now price(1)이 top price(0)보다 높으므로, now second 3이 삽입된다.  
+![425845](./docs/425845.jpg)     
+
+Step 5.     
+top second는 3, top price는 3초 일 때 가격, 즉 1이다. now second는 4이며, now price 는 4이다.    
+now price(4)가 top price(1) 보다 크므로 1번 기준에 따라 Stack에 now second(4) 을 삽입한다.     
+![425846](./docs/425846.jpg)  
+
+Step 6.      
+top second는 4, top price는 4초 일 때 가격, 즉 4이다. now second는 5이며, now price 는 5이다.    
+now price(5)가 top price(4) 보다 크므로 1번 기준에 따라 Stack에 now second(5) 을 삽입한다.     
+![425847](./docs/425847.jpg)  
+
+Step 7.      
+Stack 내의 남은 원소들이 남아있다.    
+
+
+예시 :
+[42578 문제](https://programmers.co.kr/learn/courses/30/lessons/42584)      
+[42578 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542584(%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9)-%EC%8A%A4%ED%83%9D%2C%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42584.py)    
+참조 : https://sanghyeok.tistory.com/7
+
 
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
