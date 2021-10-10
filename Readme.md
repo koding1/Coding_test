@@ -407,7 +407,7 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 파라메트릭 서치 (Parametric search) : 최적화 문제를 결정 문제(예, 아니오로 답하는 문제)로 바꾸어 해결하는 기법. '원하는 조건을 만족하는 가장 알맞은 값을 찾는 문제'       
 
 예시 :
-[43238 문제](https://programmers.co.kr/learn/courses/30/lessons/42578)      
+[43238 문제](https://programmers.co.kr/learn/courses/30/lessons/42578)
 [43238 코드](https://github.com/koding1/Coding_test/blob/main/programmers/43238(%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC)-%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89%2C%ED%8C%8C%EB%9D%BC%EB%A9%94%ED%8A%B8%EB%A6%AD%EC%84%9C%EC%B9%98/43238.py)    
 참조 : https://sanghyeok.tistory.com/7
 
@@ -440,7 +440,7 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 아무것도 입지 않은 경우에 대한 count를 제거해준다.    
 
 예시 :
-[42578 문제](https://programmers.co.kr/learn/courses/30/lessons/43238)      
+[42578 문제](https://programmers.co.kr/learn/courses/30/lessons/43238) 
 [42578 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542578(%EC%9C%84%EC%9E%A5)-%ED%95%B4%EC%8B%9C%2C%EC%88%98%ED%95%99%EC%A0%81%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42578.py)    
 
 ### 9. 42584 주식가격 (Stack, idea) by programmers
@@ -499,7 +499,7 @@ answer 1, 2는 Step 4에서 각각 2, 1 로 정해졌다.
 최종 답은 5 2 1 2 1 0 이 된다.   
 
 예시 :
-[42584 문제](https://programmers.co.kr/learn/courses/30/lessons/42584)      
+[42584 문제](https://programmers.co.kr/learn/courses/30/lessons/42584) 
 [42584 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542584(%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9)-%EC%8A%A4%ED%83%9D%2C%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42584.py)    
 
 ### 10. 42839 소수 찾기 (Prime number, ) by programmers
@@ -538,7 +538,7 @@ Prime num 판별은 자주 사용하는 코드 중에 하나다. 2부터 int(mat
 [에라토스테네스의 체 위키백과](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4) 
      
 예시 :
-[42839 문제](https://programmers.co.kr/learn/courses/30/lessons/42839?language=python3)      
+[42839 문제](https://programmers.co.kr/learn/courses/30/lessons/42839?language=python3) 
 [42839 코드](
 https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542839(%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0)-%EC%86%8C%EC%88%98%2C%EC%88%9C%EC%97%B4%2Cset%2CPermutation/42839.py)      
 참조 : https://minhamina.tistory.com/37
