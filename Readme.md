@@ -540,7 +540,7 @@ Prime num 판별은 자주 사용하는 코드 중에 하나다. 2부터 int(mat
 예시 :
 [42839 문제](https://programmers.co.kr/learn/courses/30/lessons/42839?language=python3)      
 [42839 코드](
-https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542839(%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0)-%EC%86%8C%EC%88%98%2C%EC%88%9C%EC%97%B4%2Cset%2CPermutation/42839.py)
+https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542839(%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0)-%EC%86%8C%EC%88%98%2C%EC%88%9C%EC%97%B4%2Cset%2CPermutation/42839.py)      
 참조 : https://minhamina.tistory.com/37
 
 
