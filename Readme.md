@@ -535,7 +535,7 @@ set 자료형 함수들도 상기 시킬 필요가 있어 가져와보았다.
  
 Prime num 판별은 자주 사용하는 코드 중에 하나다. 2부터 int(math.sqrt(num)) + 1 까지만 체크하면 해당 수가 소수인지 아닌지 판별 할 수 있다.    
 '에라토스테네스의 체'라는 방식으로 푼 코드들도 있었는데, 알아두면 좋을 것 같아서 링크한다.     
-[에라토스테네스](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4) 
+[에라토스테네스의 체 위키백과](https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4) 
      
 예시 :
 [42839 문제](https://programmers.co.kr/learn/courses/30/lessons/42839?language=python3)      
