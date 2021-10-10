@@ -442,7 +442,6 @@ set를 이용하여 간단하게 합집합을 구현하고, enumerate를 잘 활
 예시 :
 [42578 문제](https://programmers.co.kr/learn/courses/30/lessons/43238)      
 [42578 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542578(%EC%9C%84%EC%9E%A5)-%ED%95%B4%EC%8B%9C%2C%EC%88%98%ED%95%99%EC%A0%81%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42578.py)    
-참조 : https://sanghyeok.tistory.com/7
 
 ### 9. 42584 주식가격 (Stack, idea) by programmers
 
@@ -502,7 +501,45 @@ answer 1, 2는 Step 4에서 각각 2, 1 로 정해졌다.
 예시 :
 [42584 문제](https://programmers.co.kr/learn/courses/30/lessons/42584)      
 [42584 코드](https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542584(%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9)-%EC%8A%A4%ED%83%9D%2C%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4/42584.py)    
-참조 : https://sanghyeok.tistory.com/7
+
+### 10. 42839 소수 찾기 (Prime number, ) by programmers
+
+설명 : 순열이란 n개의 값 중에서 r개의 숫자를 모든 순서대로 뽑는 경우를 말한다. 수열에서 순서에 따라 결과가 달라지는 방식이다.    
+참조 링크에 2번 Visited 를 이용해 DFS로 구현하는 방법을 사용해보았다. 조합(Combination)과 순열(Permutation)에 약한 것 같아 연습이 필요하다고 느낀다.    
+
+    if visited[i] == False:
+
+        tmp = output.copy()
+        tmp.append(numbers[i])
+
+        tmp_visited = visited.copy()
+        tmp_visited[i] = True
+        
+        per1(arr, tmp, numbers, tmp_visited, depth+1, finish)
+
+재귀 호출 부분만 살펴보면, output.copy()를 사용해서 output이 손상되는 일이 없도록 설계했고, visited 도 tmp_visited 를 이용했다.     
+메모리 효율성이 좋지 않으므로, 더 나은 방식에 대한 고민이 필요 할 것 같다. https://ykss.netlify.app/algorithm/reetcode_8/
+
+    # set의 특성을 유지하면서 list를 set에 추가 할 수 있음
+    my_set.update(arr)
+
+set 자료형 함수들도 상기 시킬 필요가 있어 가져와보았다.
+
+    def isprime(num):
+
+        for i in range(2, int(math.sqrt(num)) + 1):
+            if num % i == 0:
+                return False
+
+        return True
+ 
+Prime num 판별은 자주 사용하는 코드 중에 하나다. 2부터 int(math.sqrt(num)) + 1 까지만 체크하면 해당 수가 소수인지 아닌지 판별 할 수 있다.    
+
+예시 :
+[42839 문제](https://programmers.co.kr/learn/courses/30/lessons/42839?language=python3)      
+[42839 코드](
+https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542839(%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0)-%EC%86%8C%EC%88%98%2C%EC%88%9C%EC%97%B4%2Cset%2CPermutation/42839.py)
+참조 : https://minhamina.tistory.com/37
 
 
 # 미해결 :    
