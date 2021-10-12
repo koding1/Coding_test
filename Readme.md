@@ -344,6 +344,15 @@ https://sanghyeok.tistory.com/7
 출처 및 참조 :       
 https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC       
 https://assaeunji.github.io/python/2020-05-06-bj2751/
+
+
+### 29. 역 슬라이싱
+
+    for item in my_list[::-1]: #[::-1] 역으로 슬라이싱
+    
+설명 : my_list 안의 원소를 my_list[-1] 부터 my_list[0] 까지 슬라이싱한다.  
+
+
 </br></br></br>
 
 
