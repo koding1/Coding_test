@@ -553,6 +553,31 @@ https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8542839(%EC%
 참조 : https://minhamina.tistory.com/37
 
 
+### 11. 49189 가장 먼 노드 (Graph, BFS) by programmers
+
+설명 : Graph 구현과 BFS가 잘 활용된 문제이다.     
+이 문제에서 기억하고 싶은 부분은 "BFS가 최단 거리를 보장한다는 점" 이다.     
+
+    # i 정점에 방문 한 적 없다면
+    if visited[i] == False:
+        q.append(i) # i 정점 삽입
+        visited[i] = True
+        distance[i] = distance[now] + 1
+
+distance를 수정 할 때,    
+
+    if distance[i] > distance[now] + 1:
+        distance[i] = distance[now] + 1
+
+처럼 굳이 if 문을 사용하여 '기존에 확인 되었던 i 까지의 거리'와 '이번 경로의 거리'를 비교하지 않았다는 것을 확인 할 수 있다.    
+이는 해당 정점에 처음 방문하기만 했다면, '항상 최단 거리로 도달 했다'는 점이 보장되기 때문에 가능한 일이다.    
+
+예시 :
+[49189 문제](https://programmers.co.kr/learn/courses/30/lessons/49189)
+[49189 코드](
+https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8549189(%EA%B0%80%EC%9E%A5%EB%A8%BC%EB%85%B8%EB%93%9C)-Graph%2CBFS/49189.py)
+
+
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
 
