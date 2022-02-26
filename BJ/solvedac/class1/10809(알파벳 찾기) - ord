@@ -1,0 +1,17 @@
+from operator import le
+from re import A
+
+
+appear_index = [-1] * 26
+
+s = input()
+
+for idx, val in enumerate(s):
+    if appear_index[ord(val) - ord('a')] == -1: # char to ascii 인덱싱
+        appear_index[ord(val) - ord('a')] = idx
+
+for i in range(len(appear_index)):
+    print(appear_index[i], end = '')
+    if ((i + 1) < len(appear_index)):
+        print(end = ' ')
+
