@@ -1,0 +1,10 @@
+t, m = map(int, input().split(' '))
+
+to_m = (t * 60) + m
+
+to_m -= 45
+
+if (to_m < 0):
+    to_m += 24 * 60
+
+print(int(to_m / 60), to_m % 60)
