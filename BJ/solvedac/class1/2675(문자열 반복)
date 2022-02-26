@@ -1,0 +1,8 @@
+n = int(input())
+
+for i in range(n):
+    r, s = input().split(' ')
+    for ch in s:
+        for j in range(int(r)): # int(r) 중요 !
+            print(ch, end = '')
+    print()
