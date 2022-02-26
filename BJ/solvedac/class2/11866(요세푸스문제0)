@@ -1,0 +1,13 @@
+n, k = map(int, input().split(' '))
+
+alive = [i for i in range(1, n + 1)]
+
+print("<", end = '')
+die = 0
+while (alive): # alive list에 원소가 있을 동안
+    die = (die + k - 1) % len(alive)
+    print(alive[die], end = '')
+    del alive[die]
+    if (alive): # 제거 될 원소가 남았다면
+        print(", ", end = '')
+print(">")
