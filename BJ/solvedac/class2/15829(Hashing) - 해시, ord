@@ -1,0 +1,10 @@
+slen = int(input())
+s = input()
+
+h = 0
+
+for i, ch in enumerate(s):
+    h += ((ord(ch) - ord('a') + 1) * (31 ** i)) # a => 1 이므로 + 1
+h = h % 1234567891
+
+print(h)
