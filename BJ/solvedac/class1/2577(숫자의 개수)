@@ -1,0 +1,14 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+num = a * b * c
+
+cnt = [0] * 10 # list 생성과 동시에 원소 10개를 0으로 초기화
+
+while (num > 0):
+    cnt[num % 10] += 1
+    num = int(num / 10)
+
+for i in cnt:
+    print(i)
