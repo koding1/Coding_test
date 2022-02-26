@@ -1,0 +1,45 @@
+def stack_append(stack, print_list):
+    global num
+
+    stack.append(num)
+    print_list.append("+")
+    num += 1
+
+def stack_pop(stack, print_list):
+    global cnt
+
+    stack.pop()
+    print_list.append("-")
+    cnt += 1
+
+n = int(input())
+
+stack = []
+
+pop_order = []
+
+for i in range(n):
+    pop_order.append(int(input()))
+
+
+cnt = 0 # 꺼낸 원소 수
+num = 1
+flag = 1 # NO를 출력했다면 print_list 출력 하지 않기
+print_list = []
+while cnt < n:
+    if not stack: # stack이 비어있다면
+        stack_append(stack, print_list)
+    elif stack[-1] == pop_order[cnt]: # 그냥 pop 하면 된다
+        stack_pop(stack, print_list)
+    elif stack[-1] < pop_order[cnt]: # 현재 pop되야 하는 수까지 전체 push 후 1회 pop
+        while stack[-1] != pop_order[cnt]:
+            stack_append(stack, print_list)       
+        stack_pop(stack, print_list)
+    else:
+        flag = 0
+        print("NO")
+        break
+
+if (flag):
+    for ch in print_list:
+        print(ch)
