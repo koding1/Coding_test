@@ -1,0 +1,21 @@
+def is_prime(num):
+    if num == 1:
+        return False
+    if ((1 < num) and (num < 3)):
+        return True
+    i = 2
+    while ((i * i) <= num):
+        if (num % i == 0):
+            return False
+        i += 1
+    return True
+
+n = input()
+
+nums = list(map(int, input().split(' ')))
+
+cnt = 0
+for num in nums:
+    if is_prime(num):
+        cnt += 1
+print(cnt)
