@@ -1,0 +1,12 @@
+t = int(input())
+
+strs = []
+for i in range(t):
+    h, w, n = map(int ,input().split(' '))
+    if (n % h) == 0: # 예외 처리 중요 ! 이거 안해서 틀렸음 ㅠ
+        strs.append(f'{(h):d}{(int(n / h)) :02d}')
+    else:
+        strs.append(f'{(n % h):d}{(int(n / h) + 1) :02d}')
+
+for s in strs:
+    print(s)
