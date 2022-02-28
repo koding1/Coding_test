@@ -592,6 +592,32 @@ distance를 수정 할 때,
 [49189 코드](
 https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8549189(%EA%B0%80%EC%9E%A5%EB%A8%BC%EB%85%B8%EB%93%9C)-Graph%2CBFS/49189.py)
 
+### 12. 1654 랜선 자르기 (Binary Search) by baekjoon
+
+설명 : Binary Search 잘 이해하고 있어야 해결 할 수 있는 문제이다.   
+
+    while min_ <= max_length:
+        cnt = 0
+        mid = (min_ + max_length) // 2
+        for i in range(k):
+            cnt += (arr[i] // mid)
+        if cnt < n:
+            max_length = mid - 1
+        elif cnt >= n: # =을 넣어서 cnt == n 인 것 중 최대 값이 구해지도록 했다.
+            min_ = mid + 1
+
+    print(max_length) # 이 때 max_length + 1 은 cnt 가 n을 넘는 최초의 수가 되므로
+
+자르는 길이    : 198 199 200 201 202   
+나오는 전선 수 : 11  11  11  10  10   
+일 때, n을 11로 설정하고 이진 탐색을 반복하게 되면 mid가 201이 되는 순간 max_length는 200이 된다.    
+또한 n이 11이 된 순간부터 min_은 mid에서 1씩 증가하므로, 언젠가 max_length가 200 이고, min_이 201이 되면서 교차되어 반복이 종료 될 것을 예상 할 수 있다.    
+따라서 이진 탐색이 끝나고 max_length + 1은 n + 1 개가 나오게 되는 최초의 순간을 의미하니 max_length가 나오는 전선 수가 n 일 때 가질 수 있는 최대 길이가 된다.    
+
+예시 :
+[1654 문제](https://www.acmicpc.net/problem/1654)
+[1654 코드](
+https://github.com/koding1/Coding_test/blob/main/BJ/solvedac/class2/%E2%98%851654(%EB%9E%9C%EC%84%A0%EC%9E%90%EB%A5%B4%EA%B8%B0)%20-%20binary%20search)
 
 # 미해결 :    
 1. match 결과에 차이가 발생하는 이유    
