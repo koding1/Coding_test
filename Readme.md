@@ -606,13 +606,13 @@ https://github.com/koding1/Coding_test/blob/main/programmers/%E2%98%8549189(%EA%
         elif cnt >= n: # =을 넣어서 cnt == n 인 것 중 최대 값이 구해지도록 했다.
             min_ = mid + 1
 
-    print(max_length) # 이 때 max_length + 1 은 cnt 가 n을 넘는 최초의 수가 되므로
+    print(max_length) # 이 때 max_length + 1 은 cnt 가 n보다 작은 최초의 순간 이므로
 
 자르는 길이    : 198 199 200 201 202   
 나오는 전선 수 : 11  11  11  10  10   
-일 때, n을 11로 설정하고 이진 탐색을 반복하게 되면 mid가 201이 되는 순간 max_length는 200이 된다.    
+일 때, n을 11로 설정하고 이진 탐색을 반복하게 되면 mid가 201이 되는 순간 cnt < n 이므로 max_length는 200이 된다.    
 또한 n이 11이 된 순간부터 min_은 mid에서 1씩 증가하므로, 언젠가 max_length가 200 이고, min_이 201이 되면서 교차되어 반복이 종료 될 것을 예상 할 수 있다.    
-따라서 이진 탐색이 끝나고 max_length + 1은 n + 1 개가 나오게 되는 최초의 순간을 의미하니 max_length가 나오는 전선 수가 n 일 때 가질 수 있는 최대 길이가 된다.    
+따라서 이진 탐색이 끝나고 max_length + 1은 cnt < n 이 되는 최초의 순간을 의미하니 max_length가 나오는 전선 수가 n 일 때 가질 수 있는 최대 길이가 된다.    
 
 예시 :
 [1654 문제](https://www.acmicpc.net/problem/1654)
