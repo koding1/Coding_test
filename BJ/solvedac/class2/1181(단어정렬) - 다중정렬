@@ -1,0 +1,14 @@
+import sys
+
+n = int(input())
+
+strs = []
+
+for i in range(n):
+    strs.append(sys.stdin.readline().strip()) # 이렇게 입력 받으면 input() 보다 훨~~씬 빠르다
+
+strs = list(set(strs)) # set로 변환하여 중복 삭제 하고 다시 list 로 변환
+strs.sort(key = lambda x : (len(x), x)) # 기준 1 -> 문자열 길이, 기준 2 -> 문자열
+
+for s in strs:
+    print(s)
