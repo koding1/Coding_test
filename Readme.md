@@ -240,7 +240,7 @@ https://kkamikoon.tistory.com/136
     import math
     # x, y, z 의 최대공약수
     print(math.gcd(x,y,z))
-
+예시 : https://github.com/koding1/Coding_test/blob/main/BJ/solvedac/class2/2609(%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98)%20-%20gcd%2C%20lcm      
 ### 25-2. lcm(최소공약수) 구하기  
     # 1.
     def lcm(x, y):
@@ -249,7 +249,7 @@ https://kkamikoon.tistory.com/136
     import math
     # x, y의 최소공배수
     print(math.lcm(x,y))
-
+예시 : https://github.com/koding1/Coding_test/blob/main/BJ/solvedac/class2/2609(%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98)%20-%20gcd%2C%20lcm      
 ### 26. heapq 라이브러리 - 최소 힙 자료구조
 ![heaqp](./docs/heaqp.jpg)
     
