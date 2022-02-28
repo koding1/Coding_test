@@ -1,0 +1,40 @@
+def get_change_cnt(board, i, j, flag):
+    cnt = 0
+    if (flag): # 시작 위치를 치환하고 시작하는 경우
+        if (board[i][j] == 'W'):
+            now = 'B'
+        else:
+            now = 'W'
+    else: # 시작 위치 그대로 가지고 가는 경우
+        now = board[i][j]
+    
+    for y in range(i, i + 8):
+        for x in range(j, j + 8):
+            if (now != board[y][x]):
+                cnt += 1
+            if (now == 'W'): # 번갈아가면서 다른 문자가 나와야 하므로
+                now = 'B'
+            else:
+                now = 'W'
+        if (now == 'W'): #열이 바뀌면 같은 문자가 연달아 나온다
+            now = 'B'
+        else:
+            now = 'W'
+    return cnt
+
+n, m = map(int, input().split(' '))
+
+board = []
+for i in range(n):
+    board.append(list(input()))
+
+min_cnt = 0
+
+for i in range(0, n - 7):
+    for j in range(0, m - 7):
+        case1 = get_change_cnt(board, i, j, 0) 
+        case2 = get_change_cnt(board, i, j, 1)
+        if (min(case1, case2) < min_cnt) or (i == 0 and j == 0):
+            min_cnt = min(case1, case2)
+
+print(min_cnt)
