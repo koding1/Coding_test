@@ -22,4 +22,4 @@ while min_ <= max_length:
         min_ = mid + 1
 
 
-print(max_length) # 이 때 max_length + 1 은 cnt 가 n을 넘는 최초의 수가 되므로
+print(max_length) # 이 때 max_length + 1 은 cnt 가 n보다 작은 최초의 순간 이므로
