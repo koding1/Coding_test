@@ -1,0 +1,18 @@
+a, b = map(int, input().split())
+
+def gcd(a, b): # x > y 여야 한다
+    while b:
+        n = a % b
+        a = b
+        b = n
+    return a
+
+if a > b:
+    gcd_num = gcd(a, b)
+else:
+    gcd_num = gcd(b, a)
+
+lcm_num = (a * b) // gcd_num
+
+print(gcd_num)
+print(lcm_num)
