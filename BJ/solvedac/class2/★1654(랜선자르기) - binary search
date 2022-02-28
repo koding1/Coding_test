@@ -1,0 +1,25 @@
+import sys
+k, n = map(int, input().split())
+
+arr = []
+max_length = 0
+for i in range(k):
+    arr.append(int(sys.stdin.readline()))
+    if (i == 0 or max_length < arr[i]):
+        max_length = arr[i]
+
+cnt = 0
+
+min_ = 1
+while min_ <= max_length:
+    cnt = 0
+    mid = (min_ + max_length) // 2
+    for i in range(k):
+        cnt += (arr[i] // mid)
+    if cnt < n:
+        max_length = mid - 1
+    elif cnt >= n: # =을 넣어서 cnt == n 인 것 중 최대 값이 구해지도록 했다.
+        min_ = mid + 1
+
+
+print(max_length) # 이 때 max_length + 1 은 cnt 가 n을 넘는 최초의 수가 되므로
