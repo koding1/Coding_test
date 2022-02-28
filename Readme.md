@@ -356,7 +356,7 @@ https://assaeunji.github.io/python/2020-05-06-bj2751/
 
     strs.sort(key = lambda x : (len(x), x)) # 기준 1 -> 문자열 길이, 기준 2 -> 문자열
     
-설명 : 문자열 길이로 정렬하고, 문자열 길이가 같은 것 끼리 문자열 아스키 기준으로 정렬
+설명 : 문자열 길이로 정렬하고, 문자열 길이가 같은 것 끼리 문자열 아스키 기준으로 정렬        
 예시 : https://github.com/koding1/Coding_test/blob/main/BJ/solvedac/class2/1181(%EB%8B%A8%EC%96%B4%EC%A0%95%EB%A0%AC)%20-%20%EB%8B%A4%EC%A4%91%EC%A0%95%EB%A0%AC      
 
 ### 31. 입력 빠르게 받기
@@ -365,7 +365,7 @@ https://assaeunji.github.io/python/2020-05-06-bj2751/
     
     2. strs.append(input())
     
-설명 : 1번이 2번보다 훨씬 빠르다
+설명 : 1번이 2번보다 훨씬 빠르다       
 예시 : https://github.com/koding1/Coding_test/blob/main/BJ/solvedac/class2/1181(%EB%8B%A8%EC%96%B4%EC%A0%95%EB%A0%AC)%20-%20%EB%8B%A4%EC%A4%91%EC%A0%95%EB%A0%AC       
 
 </br></br></br>
