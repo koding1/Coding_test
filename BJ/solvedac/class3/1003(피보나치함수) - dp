@@ -1,0 +1,14 @@
+t = int(input())
+
+def get_print_cnt_fibonacci(n):
+    while len(zero_dp) <= n:
+        zero_dp.append(zero_dp[-1] + zero_dp[-2])
+        one_dp.append(one_dp[-1] + one_dp[-2])
+    print(zero_dp[n], one_dp[n])
+
+zero_dp = [1, 0]
+one_dp = [0, 1]
+
+for i in range(t):
+    n = int(input())
+    get_print_cnt_fibonacci(n)
