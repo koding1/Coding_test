@@ -1,0 +1,32 @@
+from sys import stdin
+
+t = int(stdin.readline().rstrip())
+
+def ac(actions, arr_len, arr):
+    l, r, flag = 0, 0, False
+    for action in actions:
+        if (action == 'D'):
+            if flag: # 뒤집힌 상태라면
+                r += 1
+            else:
+                l += 1
+        if (action == 'R'):
+            flag = not flag # flag 뒤집기
+    
+    if (r + l > arr_len):
+        return "error"
+    if (flag):
+        return '[' + ','.join(reversed(arr[l : arr_len - r])) + ']'
+    else:
+        return '[' + ','.join(arr[l : arr_len - r]) + ']'
+    
+
+for i in range(t):
+    actions = stdin.readline().rstrip()
+    arr_len = int(stdin.readline().rstrip())
+    arr = stdin.readline().rstrip()
+    if arr_len == 0:
+        arr = []
+    else:
+        arr = arr[1:-1].split(',')
+    print(ac(actions, arr_len, arr))
